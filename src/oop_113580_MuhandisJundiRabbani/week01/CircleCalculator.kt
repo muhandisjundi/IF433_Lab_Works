@@ -13,12 +13,9 @@ fun main (args: Array<String>) {
 
     //logic check
     checkSize(area)
+
+    println(checkSize(area))
 }
 
-fun checkSize(area: Double) {
-    if (area > 100) {
-        println("this is a big circle")
-    } else {
-        println("this is a small circle")
-    }
-}
+fun checkSize(area: Double) = if (area > 100) "this is a big circle" else "this is a small circle"
+
