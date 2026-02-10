@@ -2,6 +2,9 @@ package oop_113580_MuhandisJundiRabbani.week02
 
 import java.util.Scanner
 
+
+
+
 fun main() {
     val scanner = Scanner(System.`in`)
 
