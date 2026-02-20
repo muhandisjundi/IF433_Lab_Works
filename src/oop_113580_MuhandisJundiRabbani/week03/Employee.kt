@@ -3,9 +3,11 @@ package oop_113580_MuhandisJundiRabbani.week03
 class Employee(val name: String) {
     var salary: Int = 0
         set(value) {
-            println("menciba set gaji ke: $value")
-            //peringatan kode di bawah ini salah & berbahaya
-            //kita memanggil setter di dalam setter (recursive)
-            this.salary = value
+            if (value < 0) {
+                println("error: Gaji tidak boleh negatif! di set ke 0")
+                field = 0 //gunakan field bukan this.salary
+            } else {
+                field = value
+            }
         }
 }
