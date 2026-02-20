@@ -10,7 +10,7 @@ fun main() {
 
     //2 test encapsulation
     e.increasePerformance()
-    //e.perfromanceRating = 5
+    //e.perfromanceRating = 5 // coba uncomment pasti eror
 
     //3 test computed property
     println("Pajak yang harus dibayar: ${e.tax}")
