@@ -24,4 +24,7 @@ class Employee(val name: String) {
         println("Karyawan: $name, Rating: $salary")
     }
 
+    //tax dihitung 10% dari gaji saat ini
+    val tax:Double
+        get() = salary * 0.1
 }

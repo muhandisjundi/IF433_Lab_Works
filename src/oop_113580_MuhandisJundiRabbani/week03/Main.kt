@@ -2,6 +2,16 @@ package oop_113580_MuhandisJundiRabbani.week03
 
 fun main() {
     val e = Employee("Budi")
-    println("--- Text Error ---")
-    e.salary = 5000 //ini akan meledakkan program anda
+
+    //1 test validasi salary
+    e.salary = -1000
+    e.salary = 5000000
+    println("Gaji: ${e.salary}")
+
+    //2 test encapsulation
+    e.increasePerformance()
+    //e.perfromanceRating = 5
+
+    //3 test computed property
+    println("Pajak yang harus dibayar: ${e.tax}")
 }
