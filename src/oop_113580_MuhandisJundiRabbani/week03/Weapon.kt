@@ -3,7 +3,7 @@ package oop_113580_MuhandisJundiRabbani.week03
 class Weapon(val name: String) {
     var damage: Int = 0
         set(value) {
-            if(damage < 0){
+            if(value < 0){
                 println("Damage gaboleh 0")
                 return
             }
@@ -13,11 +13,11 @@ class Weapon(val name: String) {
     val tier: String
         get(){
             if(damage > 800){
-                println("Legendary")
+                return "Legendary"
             } else if(damage > 500){
-                println("Epic")
+                return "Epic"
             } else{
-                println("Common")
+                return "common"
             }
         }
 

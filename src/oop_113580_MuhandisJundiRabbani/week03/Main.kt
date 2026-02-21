@@ -14,4 +14,11 @@ fun main() {
 
     //3 test computed property
     println("Pajak yang harus dibayar: ${e.tax}")
+
+    val w = Weapon("Sword")
+
+    w.damage = -50
+    w.damage = 9999
+    println(w.damage)
+    println(w.tier)
 }
