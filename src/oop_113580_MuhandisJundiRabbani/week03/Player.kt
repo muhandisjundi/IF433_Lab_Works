@@ -2,7 +2,7 @@ package oop_113580_MuhandisJundiRabbani.week03
 
 class Player(val username: String) {
     private var xp: Int = 0
-    var level: Int
+    val level: Int
         get() = (xp / 100) + 1
 
     fun addXp(amount: Int) {

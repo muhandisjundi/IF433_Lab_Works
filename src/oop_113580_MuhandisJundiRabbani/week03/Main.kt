@@ -21,4 +21,13 @@ fun main() {
     w.damage = 9999
     println(w.damage)
     println(w.tier)
+
+    val p = Player("Jundi")
+    //println(p.xp) ini eror karena xp private
+
+    p.addXp(50)
+    println("Level sekarang ${p.level}")
+
+    p.addXp(60)
+    println("Level sekarang ${p.level}")
 }
