@@ -17,4 +17,14 @@ fun main() {
     elc.accelerate()
     elc.honk()
     elc.openTrunk()
+
+    println("\n--- Employee Manager Case ---")
+    val manager = Manager("John Thor", baseSalary = 5000_000)
+    val developer = Developer("Adam Kevin", baseSalary = 1000, "Kotlin")
+
+    manager.work()
+    println(manager.calculateBonus())
+
+    developer.work()
+    println(manager.calculateBonus())
 }
