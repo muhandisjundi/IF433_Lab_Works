@@ -50,6 +50,14 @@ fun main() {
 
     for (payment in paymentMethod) {
         payment.processPayment(750000.0)
+
+        when (payment) {
+            is EWallet -> {
+                println("Pembayaran menggunakan EWallet")
+                payment.topUp(50000.0)
+                payment.processPayment(75000.0)
+            }
+        }
     }
 
 
