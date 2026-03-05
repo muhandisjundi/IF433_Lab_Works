@@ -41,4 +41,16 @@ fun main() {
     println("Luas persegi panjang = $luasPersegiPanjang")
     println("Luas lingkaran= $lingkaran")
 
+    println("====================================")
+
+    val eWallet = EWallet(50000.0)
+    val creditCard = CreditCard(100000.0)
+
+    val paymentMethod: List<PaymentMethod> = listOf(eWallet, creditCard)
+
+    for (payment in paymentMethod) {
+        payment.processPayment(750000.0)
+    }
+
+
 }
