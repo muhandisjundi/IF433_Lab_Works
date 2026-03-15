@@ -7,7 +7,7 @@ class Smartwatch : Watch(), BluethoothConnectable, Recahrgable {
     }
 
     override fun connectToBluethooth() {
-        println("mencari perangkat HP di sekitar untuk pairing..."
+        println("mencari perangkat HP di sekitar untuk pairing...")
     }
 
     override fun chargeBattery() {
