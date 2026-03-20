@@ -35,4 +35,11 @@ fun main() {
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
         ApiResponse.Loading -> "Tampilkan spinner"
     }
+
+    GameManager.startGame()
+    GameManager.startGame()
+
+    println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}")
+    val weapon = Weapon.forgeStarterSword()
+    println("Starter weapon -> ${weapon.item.name} \n DMG: ${weapon.item.damage} \n ${weapon.item.rarity} \n Durability: ${weapon.durability}")
 }
