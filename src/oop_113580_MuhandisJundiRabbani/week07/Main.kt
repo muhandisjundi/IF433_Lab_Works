@@ -26,4 +26,12 @@ fun main() {
 
     val (userName, userAge) = data1 //destructing declaration
     println("Destructured: $userName berumur $userAge")
+
+    val response : ApiResponse = ApiResponse.Success("Data berhasil ditarik!")
+
+    //error: when expression must be exhaustive
+    val uiMessage = when(response) {
+        is ApiResponse.Success -> "Tampikan: ${response.data}"
+        is ApiResponse.Error -> "Munculkan alert: ${response.message}"
+    }
 }
