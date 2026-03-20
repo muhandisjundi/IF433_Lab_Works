@@ -33,5 +33,6 @@ fun main() {
     val uiMessage = when(response) {
         is ApiResponse.Success -> "Tampikan: ${response.data}"
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
+        ApiResponse.Loading -> "Tampilkan spinner"
     }
 }
