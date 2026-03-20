@@ -41,5 +41,5 @@ fun main() {
 
     println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}")
     val weapon = Weapon.forgeStarterSword()
-    println("Starter weapon -> ${weapon.item.name} \n DMG: ${weapon.item.damage} \n ${weapon.item.rarity} \n Durability: ${weapon.durability}")
+    println("Starter weapon => ${weapon.item.name} \n DMG: ${weapon.item.damage} \n ${weapon.item.rarity} \n Durability: ${weapon.durability}")
 }
