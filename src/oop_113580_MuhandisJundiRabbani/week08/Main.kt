@@ -39,7 +39,7 @@ fun main() {
     }
 
     val someObject: Any = 100 //tipe aslinya integer
-    //coba cast ke string. jika gagal (null). ganti dengan "unknown string"
+    //coba cast ke string. jika gagal (null). ganti dengan "unknown stringg"
     val safeString = someObject as? String ?: "unknown string"
     println("hasil cast + fallback: $safeString")
 }
