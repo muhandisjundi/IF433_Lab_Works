@@ -42,4 +42,14 @@ fun main() {
     //coba cast ke string. jika gagal (null). ganti dengan "unknown stringg"
     val safeString = someObject as? String ?: "unknown string"
     println("hasil cast + fallback: $safeString")
+
+
+    println("\n=== TEST THE RED BUTTON")
+    val toxicData: String? = null
+    try{
+        //dangeroues: memeaksa compiler percaya data ini tidak null
+        val length = toxicData!!.length
+    }catch (e: NullPointerException){
+        println("CRASH (NPE)! jangan gunakan !! secara sembarangan")
+    }
 }
