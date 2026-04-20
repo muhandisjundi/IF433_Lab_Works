@@ -27,8 +27,14 @@ class ApiParser {
 
     fun ceckout(product: Product) {
         val id = when (product) {
-            is Product.Electronic -> product.id
-            is Product.Clothing -> product.id
+            is Product.Electronic -> {
+                println("processing electronic: ${product.name} (warranty: ${product.warrantyMonths})")
+                product.id
+            }
+            is Product.Clothing -> {
+                println("processing clothing: ${product.name} (size: ${product.size})")
+                product.id
+            }
         }
 
         val transactionId = JavaPaymentService.processPayment(id)!!
