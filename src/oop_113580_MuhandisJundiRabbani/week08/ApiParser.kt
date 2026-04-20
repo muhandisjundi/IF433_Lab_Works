@@ -23,6 +23,16 @@ class ApiParser {
             println("Parsing Error: ${e.message}")
             throw e
         }
+    }
 
+    fun ceckout(product: Product) {
+        val id = when (product) {
+            is Product.Electronic -> product.id
+            is Product.Clothing -> product.id
+        }
+
+        val transactionId = JavaPaymentService.processPayment(id)!!
+
+        println("Checkout berhasil. transaction ID: $transactionId")
     }
 }
