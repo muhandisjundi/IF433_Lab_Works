@@ -9,4 +9,14 @@ fun main() {
         Student("Citra", 2.8),
         Student("Dewi", 3.7)
     )
+
+    println("=== NOMOR STUDENTS PIPELINE ===")
+
+    //ktia butuh nama mahasiswa yang gpa nya >= 3.5, dan diurutkan abjad
+    val honorNames = students
+        .filter { it.gpa >= 3.5 }
+        .sortedBy { it.name }
+        .map { it.name.uppercase() }
+
+    honorNames.forEach { println("honor roll: $it") }
 }
