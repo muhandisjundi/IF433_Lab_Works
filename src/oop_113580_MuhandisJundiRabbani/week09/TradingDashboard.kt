@@ -21,4 +21,8 @@ fun main(){
         .map{
             "WIN [${it.pair} - ${it.position}]: + ${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
+
+    val uniquePairs = tradeHistory
+        .map{ it.pair } //manggil pair nya aja
+        .toSet() //untuk ilangin duplikat
 }
