@@ -40,5 +40,10 @@ fun main(){
     }
 
     println("\n=== WORST PERFORMERS ===")
-    worstper
+    worstPerformersString.forEach{
+        println(it)
+    }
+    uniquePairs.forEach {
+        println(it)
+    }
 }
