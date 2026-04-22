@@ -25,4 +25,11 @@ fun main(){
     val uniquePairs = tradeHistory
         .map{ it.pair } //manggil pair nya aja
         .toSet() //untuk ilangin duplikat
+
+
+    println("\N=== CRYPTO TRADING DASHBOARD ===")
+
+    topPerformersString.forEach{
+        println(it)
+    }
 }
