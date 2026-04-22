@@ -22,6 +22,12 @@ fun main(){
             "WIN [${it.pair} - ${it.position}]: + ${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
 
+    val worstPerformersString = losingTrades
+        .sortedBy { it.pair }
+        .map {
+            "WIN [${it.pair} - ${it.position}]: + ${it.roe}% ROE (Lev: ${it.leverage}x)"
+        }
+
     val uniquePairs = tradeHistory
         .map{ it.pair } //manggil pair nya aja
         .toSet() //untuk ilangin duplikat
@@ -32,4 +38,7 @@ fun main(){
     topPerformersString.forEach{
         println(it)
     }
+
+    println("\n=== WORST PERFORMERS ===")
+    worstper
 }
