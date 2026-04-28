@@ -7,4 +7,8 @@ fun main() {
 
     println("isi intBox: ${intBox.value}")
     println("isi intBox: ${stringBox.value}")
+
+    println("\n=== TEST MULTIPLE PARAMETERS ===")
+    val itemPrice = PairBox("Bitcoin", 65000)
+    println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
 }
