@@ -10,4 +10,10 @@ fun main() {
 
     val response = ApiResponse("200 OK", coinRepo.getAll())
 
+    println("Status: ${response.status}")
+    println("--- Coin List ---")
+    response.data.forEach { coin ->
+        println("Coin: ${coin.name}, Balance: ${coin.balance}")
+    }
+
 }
