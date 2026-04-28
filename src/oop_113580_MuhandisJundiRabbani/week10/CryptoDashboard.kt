@@ -1,7 +1,5 @@
 package oop_113580_MuhandisJundiRabbani.week10
 
-
-
 fun main() {
     val coinRepo = WalletRepository<Coin>()
     coinRepo.add(Coin("BTC", 0.5))
@@ -27,4 +25,3 @@ fun main() {
     }
 }
 
-}
