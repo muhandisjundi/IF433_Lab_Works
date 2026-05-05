@@ -27,4 +27,9 @@ fun main() {
     searchResult?.let {
         println(it.diagnose())
     }
+
+    with(homeDevices) {
+        println("=== Smart Home Dashboard Summary ===")
+        println("Total Perangkat: ${this.size}")
+    }
 }
