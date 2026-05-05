@@ -44,4 +44,3 @@ fun main() {
         println("User baru berhasil dibuat: $it")
     }
 }
-}
