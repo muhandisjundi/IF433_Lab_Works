@@ -37,5 +37,10 @@ fun main() {
         dispenseKibble(30, 1000, false)
     }
 
+    result.onSuccess { newStock ->
+        currentKibbleStock = newStock
+        println("Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr")
+    }
+
 }
 
