@@ -35,5 +35,5 @@ fun main() {
         }
     }
     // File otomatis di-close di sini!
-}
+
 }
