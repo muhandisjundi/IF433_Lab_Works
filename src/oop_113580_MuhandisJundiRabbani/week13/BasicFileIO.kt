@@ -7,4 +7,6 @@ fun main () {
     val file = File("notes.txt")
     file.writeText("Line 1: Inisialisasi sistem. \n")
     println("file berhasil dibuat dan ditulis")
+
+
 }
