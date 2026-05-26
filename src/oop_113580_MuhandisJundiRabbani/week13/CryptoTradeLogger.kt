@@ -55,3 +55,6 @@ fun main() {
 
     saveTrades(mockTrades, "crypto_trades.csv")
 
+    // Menyuntikkan data kotor/cacat secara sengaja
+    File("crypto_trades.csv").appendText("CORRUPT_ID, DOGEUSDT, Hold, XX, YY\n")
+
